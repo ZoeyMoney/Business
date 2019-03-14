@@ -1,4 +1,8 @@
-
+document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+        $(".loading").fadeOut()
+    }
+}
 
 $(window).on('load',function () {
 /*
@@ -7,7 +11,9 @@ var $home = $('#yu'),
 $hom.fadeIn();
 $home.delay(950).fadeOut(1000);
 */
-$('body').fadeIn(1500);
+
+/*$('body').fadeIn(1500);*/
+
 
     /*录播图*/
     var mySwiper = new Swiper('.swiper-container', {

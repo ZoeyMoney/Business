@@ -18,11 +18,28 @@
     top: 50%;
     /*display: block;*/
 }
-body{
-    display: none;
-}
 a:hover{
     text-decoration: none;
+}
+.loading{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100;
+}
+.pic{
+    width: 64px;
+    height: 64px;
+    background: url("../image/cun.gif");
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 .container-fluid{
     display: none;
